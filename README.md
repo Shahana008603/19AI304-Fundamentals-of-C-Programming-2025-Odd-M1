@@ -1,4 +1,6 @@
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd-M1
+## NAME:SHAHANA.C
+## REFF NO:25917599
 # IAPR-1- Module 1 - FoC
 ## 1. Implementation of basic C programs using Literals,Consonants, Variables, Data types.
 ## 2. Implementation of different categories of operators.
@@ -26,7 +28,25 @@ To build a C program that prints integer, float,character, and string literals o
 ### Step 4: 
    Stop
 # Program:
+#include <stdio.h>
+
+int main()
+{
+    printf("Integer literal: %d, Size: %zu bytes\n", 10, sizeof(10));
+
+    printf("Float literal: %f, Size: %zu bytes\n", 3.14f, sizeof(3.14f));
+
+    printf("Character literal: %c, Size: %zu bytes\n", 'A', sizeof('A'));
+
+    printf("String literal: %s, Size: %zu bytes\n", "Hello C", sizeof("Hello C"));
+
+    return 0;
+}
+
 # Output:
+![WhatsApp Image 2025-12-28 at 3 59 44 PM](https://github.com/user-attachments/assets/8d5d9193-308f-4b1a-b0a4-64efe86012e4)
+
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -57,7 +77,21 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 6:  
   Stop
 # Program:
+#include <stdio.h>
+
+#define PI 3.14159
+
+int main()
+{
+    const int DAYS = 7;
+
+    printf("Value of PI = %f\n", PI);
+    printf("Value of DAYS = %d\n", DAYS);
+
+    return 0;
+}
 # Output:
+![WhatsApp Image 2025-12-28 at 4 29 27 PM](https://github.com/user-attachments/assets/f18202db-409a-4163-9880-8313729f469f)
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -81,7 +115,26 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 5:    
    Stop
 # Program:
+#include <stdio.h>
+
+int main()
+{
+    int a = 10;
+    float b = 3.5f;
+    double c = 25.678;
+    char d = 'A';
+
+    printf("Integer value = %d\n", a);
+    printf("Float value = %f\n", b);
+    printf("Double value = %lf\n", c);
+    printf("Character value = %c\n", d);
+
+    return 0;
+}
+
 # Output:
+![WhatsApp Image 2025-12-28 at 4 26 34 PM](https://github.com/user-attachments/assets/d31703f9-b602-4c9a-aecc-46a416ba436d)
+
 # Result: 
 
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd
@@ -120,7 +173,30 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+#include <stdio.h>
+
+int main()
+{
+    int a = 10, b = 3;
+    printf("Sum = %d\n", a + b);
+    printf("Difference = %d\n", a - b);
+    printf("Product = %d\n", a * b);
+    printf("Quotient = %d\n", a / b);
+    printf("Remainder = %d\n", a % b);
+    printf("AND = %d\n", a & b);
+    printf("OR = %d\n", a | b);
+    printf("XOR = %d\n", a ^ b);
+    printf("Left shift = %d\n", a << b);
+    printf("Right shift = %d\n", a >> b);
+    printf("Bitwise NOT of a = %d\n", ~a);
+    printf("Bitwise NOT of b = %d\n", ~b);
+
+    return 0;
+}
+
 # Output:
+![WhatsApp Image 2025-12-28 at 4 27 41 PM](https://github.com/user-attachments/assets/90ad915e-96f7-4bb3-8a61-081e2e445a72)
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -165,7 +241,45 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+#include <stdio.h>
+
+int main()
+{
+    char ch;
+
+    printf("Enter a character: ");
+    scanf("%c", &ch);
+
+    
+    if (ch >= '0' && ch <= '9')
+    {
+        printf("Digit");
+    }
+    
+    else if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z'))
+    {
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
+            ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
+        {
+            printf("Vowel");
+        }
+        else
+        {
+            printf("Consonant");
+        }
+    }
+    
+    else
+    {
+        printf("Special Symbol");
+    }
+
+    return 0;
+}
+
 # Output:
+![WhatsApp Image 2025-12-28 at 4 30 40 PM](https://github.com/user-attachments/assets/a80f6900-6dd7-4c19-a5af-17dc2d37c3a7)
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
